@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Ecoleta</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <link href="principal.css" rel="stylesheet">
+        <link href="home.css" rel="stylesheet">
+        <link href="index-modal.css" rel="stylesheet">
+        <link href="responsivo.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div id = "pagina-home">
+
+            <div class = "conteudo">
+                <header class = "header-principal">
+                    <img src = "extras-aula-1/icones/logo.svg" alt = "Logo da Ecoleta">
+                    <a href = "criar-ponto.html">
+                        <span> </span>
+                        Cadastre um ponto de coleta
+                    </a>
+    
+                </header>
+
+                <main>
+
+                    <h1>Seu marketplace de coleta de resíduos</h1>
+            
+                    <p>Ajudamos pessoas a encontrarem centros de coleta seletiva de forma eficiente</p>
+            
+                    <a role = "button">
+                        <span class = "lupa-botao"></span>
+                        <strong>Pesquisar pontos de coleta</strong></a>
+
+
+
+                </main>
+    
+                </div>
+    
+        </div>
+
+
+        
+        <div id="modal" class = "hidden">
+            <div class = "content">
+                <div class="header">
+                    <h1>Pontos de Coleta</h1>
+                    <a ref = "#">Fechar</a>
+                </div>
+
+                <form action = "resultado-busca.html">
+                    <label for = "search">Cidade ou Estado</label>
+
+                    <div class="search-field">
+                        <input type = "text" name = "searc" placeholder = "Pesquise por cidade"></input>
+                        
+                        <button>
+                            <img src = "extras-aula-1/icones/search.svg" alt = "buscar">
+                        </button>
+                        
+
+                    </div>
+                </form>
+
+            </div>
+                
+        </div>
+
+
+        <script src = "scripts/index.js"></script>
+
+    </body>
+
+</html>

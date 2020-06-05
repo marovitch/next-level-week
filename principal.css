@@ -1,0 +1,84 @@
+
+:root{
+
+    --title-color:#322153;
+    --verde:#34cb89;
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Roboto', sans-serif;
+}
+
+
+/*BOX MODEL
+
+TODA CAIXA TEM: largura, altura, espaçamento,
+preenchimentos, bordas, cor, fundo, mandeira como
+é vista pelo html(display)
+
+*/
+
+body{
+
+    background:#f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-principal {
+
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:5%;
+
+
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+
+main a {
+        width:100%;
+        max-width:360px;
+        height:4em;
+        background: var(--verde);
+        border:none;
+
+        border-radius:5px;
+        display:flex;
+        align-items: center;
+        margin-top:3em;
+        color:white;
+        cursor: pointer;
+
+
+}
+
+main a:hover{
+    background-color:#2fb86e;
+    transition: background-color 400ms;
+
+}
+
+main a span{
+    background-color:rgba(0,0,0, 0.08);
+    width:3em;
+    height:4em;
+    border-radius: 5px 0 0 5px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+

@@ -1,0 +1,78 @@
+/********PARTE MOBILE***********/
+
+
+@media (max-width:1375px){
+
+    #pagina-home{
+        background-size:850px;
+        background-position: bottom right 1%;
+    
+    }
+
+}
+
+@media (max-width:1175px){
+
+    #pagina-home{
+        background-size:700px;
+    
+    }
+
+}
+
+
+@media (max-width:900px){
+
+    #pagina-home{
+        background: none;
+    }
+
+    #pagina-home .conteudo{
+
+        align-items:center;
+        text-align:center;
+    }
+
+    .header-principal a {
+        position:absolute;
+        bottom:48px;
+        
+        left:50%;
+
+        transform: translateX(-50%);
+    }
+
+    #pagina-home main {
+
+        align-items:center;
+    }
+
+    #pagina-resultado-pesquisa .cartoes{
+
+        grid-template-columns: 2fr;
+
+    }
+
+    #pagina-resultado-pesquisa .cartoes img{
+        height:300px;
+    }
+
+}
+
+@media (min-width:1700px){
+    
+    #pagina-home{
+        background-position-x:45vw;
+    }
+
+}
+
+@media (max-height:760px){
+
+    #pagina-home{
+        background-position-y:50px;
+    }
+
+
+
+}

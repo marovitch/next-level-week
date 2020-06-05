@@ -1,0 +1,128 @@
+:root{
+    --fundo-input:#f0f0f5;
+    --verde:#34cb89;
+    --title-color:#322153;
+}
+
+
+/*Técnica para criar uma seção
+
+#modal{
+
+    background-color:#0e0414;
+    height:100vh;
+    width:100vw;
+
+
+}
+
+*/
+
+/*Para colocar uma seção em cima da outra */
+
+#modal{
+
+    /* fazendo canal alfa no hexadecimal*/
+    background-color:#0e0a14ef;
+    
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    
+    position:fixed;
+    top:0;
+    
+    height:100vh;
+    width:100vw;
+
+    transition:400ms;
+
+
+
+}
+
+#modal.hidden{
+
+    display:none;
+}
+
+#modal .content {
+
+    color:white;
+    width:420px;
+}
+
+#modal .header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:48px;
+}
+
+/*Criando uma solução para leitores de tela, mostra a palavra "fechar" para leitores*/
+
+#modal .header a {
+    background-image:url("extras-aula-1/icones/x.svg");
+
+    width:20px;
+    height:20px;
+
+    font-size:0.01px;
+
+    cursor: pointer;
+
+}
+
+#modal .header h1{
+
+    color:white;
+    font-size:35px;
+    line-height:42px;
+
+}
+
+#modal form label {
+
+    font-size:14px;
+    height: 16px;
+    display:block;
+    margin-bottom:8px;
+}
+
+#modal form .search-field{
+
+    display:flex;
+}
+
+/*para fazer o campo ter toda a largura da tela*/
+
+#modal form input {
+    background-color:var(--fundo-input);
+    border-radius:8px 0 0 8px;
+    border:none;
+    flex:1;
+
+    padding:16px 24px;
+
+    font-size:16px;
+    color:#6c6c80;
+
+}
+
+#modal form button{
+
+    width:72px;
+    height:72px;
+
+    background-color:var(--verde);
+
+    border:none;
+    border-radius:0 8px 8px 0;
+
+    transition:400ms;
+}
+
+#modal form button:hover{
+
+    background-color: #2fb85e;
+}
